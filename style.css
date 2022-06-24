@@ -1,9 +1,11 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
     font-family: Lusitana,Georgia,serif;  
-} */
+    overflow-x: hidden;
+
+}
 body{
    width: auto;
    height: 100vh;
@@ -115,8 +117,9 @@ nav ul li a:hover{
 }
 img{
     width: 30vh;
-    padding-left: 15px;
-    padding-top: 7vh;
+    height: 30vh;
+    padding-left: 13px;
+    padding-top: 2vh;
     margin-left: -9vh;
     border-radius: 30px;
 
@@ -128,9 +131,8 @@ img{
   
 }
 p{
-
     margin-bottom: 40vh;
-    margin-left: 5vh;
+    margin-left: 15vh;
     text-align: center;
     color: red;
 }
