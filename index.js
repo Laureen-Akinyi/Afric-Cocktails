@@ -1,12 +1,21 @@
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'f9991028bfmsh6d7694b694d8982p103ff0jsn0dd4f83584c8',
-		'X-RapidAPI-Host': 'cocktails3.p.rapidapi.com'
-	}
-};
+const details = document.querySelector(".details")
+const text = document.getElementById("text")
 
-fetch('https://cocktails3.p.rapidapi.com/random', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic")
+    .then((response) => response.json())
+    .then(data => {
+            
+            for (let i = 10; i < data.drinks.length; i++) {
+                // console.log(data.drinks[i]);
+                let img = document.createElement("img")
+                img.src = data.drinks[i].strDrinkThumb
+                details.append(img)
+
+                // console.log(data.drinks[i])
+                let p = document.createElement("p")
+                p.innerHTML = data.drinks[i].strDrink
+                details.appendChild(p)
+            }
+            // console.log(data.drinks[0]);
+        
+    })
