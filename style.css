@@ -113,20 +113,37 @@ nav ul li a:hover{
     font-weight: 200;
 }
 img{
-    width: 30%;
-    height: 30%;
-    border-style: 20 px rgb(86, 202, 19);
-    align-items: center;
+    width: 45vh;
+    padding-top: 1vh;
+    padding-bottom: 150px;
+padding-left: -20vh;
+   
+}
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20vh;
+
+}
+p{
+    padding-left: -3vh;
+    text-align: center;
 }
 
-.Content{
+
+/* .Content{
     margin-left: 201px;
 }
 
 .Content img{
     border: 10px solid white;
 }
-
+im  {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+} */
 
 
 
