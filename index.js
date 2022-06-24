@@ -1,7 +1,11 @@
+document.addEventListener("DOMContentLoaded", getCocktails)
+
 const details = document.querySelector(".details")
 const text = document.getElementById("text")
 
-fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic")
+function getCocktails(){
+
+    fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic")
     .then((response) => response.json())
     .then(data => {
             
@@ -23,3 +27,5 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic")
             // console.log(data.drinks[0]);
         
     })
+}
+
